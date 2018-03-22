@@ -3,7 +3,7 @@ echo    "# ======================================================== #"
 echo    "# == CKAN simple installation for Ubuntu 14.04          == #"
 echo    "#                                                          #"
 echo    "# Special thanks to:                                       #"
-echo    "#   Dinas Komunikasi dan Informatika Prov Jateng           #"
+echo    "#   						            #"
 echo    "# ======================================================== #"
 su -c "sleep 3"
 
