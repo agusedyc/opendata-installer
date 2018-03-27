@@ -58,7 +58,7 @@ echo    "# ======================================================== #"
 su -c "sleep 2"
 su -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
 su -c "wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add - "
-apt-get update
+su -c "apt-get update"
 
 # Add Posgres Repo
 # ==============================================
@@ -69,7 +69,7 @@ echo    "# ======================================================== #"
 #su -c "sleep 2"
 #cd /tmp
 #apt-get update
-sudo apt-get install -y postgresql-9.6
+su -c "sudo apt-get install -y postgresql-9.6"
 
 
 # Main dependences
