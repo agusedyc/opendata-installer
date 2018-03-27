@@ -1,0 +1,375 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"str",
+				"strtotime"
+			],
+			[
+				"woki",
+				"workking_start"
+			],
+			[
+				"tit",
+				"title"
+			],
+			[
+				"for",
+				"foreach\t<?php foreach (…) … <?php endforeach ?>"
+			],
+			[
+				"img",
+				"img_media"
+			],
+			[
+				"fu",
+				"fun\tfunction …"
+			],
+			[
+				"a",
+				"a\t<a>"
+			],
+			[
+				"scri",
+				"script\tTag"
+			],
+			[
+				"ec",
+				"echo\techo \"…\""
+			],
+			[
+				"strto",
+				"strtoupper"
+			],
+			[
+				"uc",
+				"ucwords"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"if",
+				"if\tif …"
+			],
+			[
+				"e",
+				"eof\tCI - End of file"
+			],
+			[
+				"data",
+				"database"
+			],
+			[
+				"T",
+				"title"
+			],
+			[
+				"hr",
+				"href\tAttr"
+			],
+			[
+				"_",
+				"_sidebar"
+			],
+			[
+				"_c",
+				"_content"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "ckan_ubuntu14.04_installer.sh",
+			"settings":
+			{
+				"buffer_size": 9293,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "htm",
+		"selected_items":
+		[
+			[
+				"htm",
+				"HTMLPrettify: Set `node` Path"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"preti",
+				"HTMLPrettify"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"paca",
+				"Install Package Control"
+			]
+		],
+		"width": 587.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/agusedyc/Git/opendata-installer"
+	],
+	"file_history":
+	[
+		"/home/agusedyc/Remote/absensi/application/libraries/Template.php",
+		"/home/agusedyc/Remote/absensi/application/views/colorlib/template.php",
+		"/home/agusedyc/Remote/absensi/application/controllers/Dashboard.php",
+		"/home/agusedyc/Remote/absensi/application/config/database.php",
+		"/home/agusedyc/Remote/absensi/application/controllers/Welcome.php",
+		"/home/agusedyc/Remote/absensi/application/config/routes.php",
+		"/home/agusedyc/Remote/absensi/application/views/colorlib/template/dashboard/sideBar.php",
+		"/home/agusedyc/Remote/absensi/application/controllers/Auth.php",
+		"/home/agusedyc/Remote/absensi/application/config/config.php",
+		"/home/agusedyc/Remote/absensi/sftp-config.json",
+		"/home/agusedyc/Remote/absensi/application/views/colorlib/admin/dashboard.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/template.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Auth.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/template/dashboard/sideBar.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Welcome.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/config/routes.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/config/ion_auth.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/libraries/Template.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/libraries/Ion_auth.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/models/Data.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/template/navbar.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/home/login.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/admin/document.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/template/dashboard/navBar.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/config/config.php",
+		"/home/agusedyc/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/home/agusedyc/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc.defaults.json",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/frontend/Download.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/admin/dashboard.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/template/dashboard/footerDash.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/admin/dashAdmin.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/system/libraries/Session/Session.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/models/Ion_auth_model.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/auth/login.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/system/core/Loader.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Document.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/system/core/Controller.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/system/core/CodeIgniter.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/config/ldap.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/sftp-config.json",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/galery/index.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Galery.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Media.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/config/autoload.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/auth.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/colorlib/template.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/controllers/Blog.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/config/database.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/template/all.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/template/sidebar.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/template/header.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/models/ion_auth_model.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/ckanapp.sublime-project",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/config/config.php.sample",
+		"/home/agusedyc/Vagrant/sftp-config-alt.json",
+		"/home/agusedyc/Vagrant/sftp-config.json",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/opendata/template/footer.php",
+		"/home/agusedyc/Vagrant/ckanMaster/ckanapp/application/views/welcome_message.php",
+		"/home/agusedyc/.config/sublime-text-3/Packages/User/.jsbeautifyrc",
+		"/home/agusedyc/Statistik/opendata/sftp-config.json"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "ckan_ubuntu14.04_installer.sh",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 9293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								498,
+								498
+							]
+						],
+						"settings":
+						{
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 27.0
+	},
+	"pinned_build_system": "",
+	"project": "opendata-installer.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Remote/ypia/ypiasmg.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 269.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -2,10 +2,10 @@ clear
 echo    "# ======================================================== #"
 echo    "# == CKAN simple installation for Ubuntu 14.04          == #"
 echo    "#                                                          #"
-echo    "# Special thanks to:                                       #"
-echo    "#   						            #"
+echo    "# Created By:				                                #"
+echo    "#   											            #"
 echo    "# ======================================================== #"
-su -c "sleep 3"
+su -c "sleep 3"	
 
 # Get parameters from user
 # ==============================================
@@ -28,25 +28,25 @@ if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ] || [ -z "$4" ]; then
 	echo -n "| Type a password: "
 	read v_password
 
-	echo	""
-	echo    "# 1.3. Set Username System Admin Open Data"
-        echo    "| Your username must be like : dinkominfo"
-        echo -n "| Type the username: "
-        read v_sysuser
+	# echo	""
+	# echo    "# 1.3. Set Username System Admin Open Data"
+ #    echo    "| Your username must be like : dinkominfo"
+ #    echo -n "| Type the username: "
+ #    read v_sysuser
 
-        echo    ""
-        echo    "# 1.4. Set email System Admin Open Data"
-        echo    "| Enter a email to be used on System Admin Open Data."
-        echo -n "| Type a e-mail System Admin: "
-        read v_sysemail
+ #    echo    ""
+ #    echo    "# 1.4. Set email System Admin Open Data"
+ #    echo    "| Enter a email to be used on System Admin Open Data."
+ #    echo -n "| Type a e-mail System Admin: "
+ #    read v_sysemail
 
 
 # Set from arguments
 else
 	v_siteurl=$1
 	v_password=$2
-	v_sysuser=$3
-        v_sysemail=$4
+	# v_sysuser=$3
+    # v_sysemail=$4
 fi
 
 # Preparations
@@ -162,8 +162,14 @@ echo    "# 10. Creating main configuration file at /etc/ckan/default/development
 #chown -R ckan.ckan /etc/ckan
 #su -s /bin/bash - ckan -c ". /usr/lib/ckan/default/bin/activate && paster make-config ckan /etc/ckan/default/development.ini"
 sed -i "s/.*ckan.site_url.*/ckan.site_url = http:\/\/$v_siteurl/g" /etc/ckan/default/production.ini
-sed -i "s/ckan_default:pass@localhost/ckan_default:$v_password@localhost/g" /etc/ckan/default/production.ini
-sed -i "s/#solr_url/solr_url/g" /etc/ckan/default/production.ini
+# Sql
+sed -i "s/.*sqlalchemy.url.*/sqlalchemy.url = postgresql://ckan_default:$v_password@localhost/ckan_default/g" /etc/ckan/default/production.ini
+# sed -i "s/ckan_default:pass@localhost/ckan_default:$v_password@localhost/g" /etc/ckan/default/production.ini
+# ckan.datastore.write_url = postgresql://ckan_default:pass@localhost/datastore_default
+sed -i "s/.*#ckan.datastore.write_url.*/sqlalchemy.url = ckan.datastore.write_url = postgresql://ckan_default:$v_password@localhost/datastore_default/g" /etc/ckan/default/production.ini
+# ckan.datastore.read_url = postgresql://datastore_default:pass@localhost/datastore_default
+sed -i "s/.*#ckan.datastore.read_url.*/sqlalchemy.url = ckan.datastore.read_url = postgresql://datastore_default:$v_password@localhost/datastore_default/g" /etc/ckan/default/production.ini
+sed -i "s/.*#solr_url.*/solr_url=http://127.0.0.1:8983/solr/g" /etc/ckan/default/production.ini
 su -c "service jetty restart"
 su -c "sleep 1"
 su -c "service nginx restart"
@@ -194,19 +200,16 @@ su -c "service apache2 restart"
 # Create a admin account
 # ==============================================
 #clear
-echo    "# ======================================================== #"
-echo    "# == 12. CKAN System Admin Account                      == #"
-echo    "# ======================================================== #"
-su -c "sleep 2"
+# echo    "# ======================================================== #"
+# echo    "# == 12. CKAN System Admin Account                      == #"
+# echo    "# ======================================================== #"
+# su -c "sleep 2"
 #
-echo    "# 12.1 Creating a System Admin account..."
-echo    "| Your account name will be : $3."
-echo    "| Type the admin password:"
+# echo    "# 12.1 Creating a System Admin account..."
+# echo    "| Your account name will be : $3."
+# echo    "| Type the admin password:"
 #su -s /bin/bash - ckan -c ". /usr/lib/ckan/default/bin/activate && cd /usr/lib/ckan/default/src/ckan && paster sysadmin add admin -c /etc/ckan/default/development.ini"
-#paster sysadmin add seanh email=seanh@localhost name=seanh -c /etc/ckan/default/production.ini
-su -s /bin/bash - ckan -c ". /usr/lib/ckan/default/bin/activate && cd /usr/lib/ckan/default/src/ckan && paster sysadmin add $3 email=$4 name=$3 -c /etc/ckan/default/production.ini
-"
-su -c "sleep 2"
+# su -c "sleep 2"
 
 echo    ""
 echo    "# ======================================================== #"
