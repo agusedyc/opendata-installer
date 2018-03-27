@@ -149,7 +149,7 @@ echo    "# 9. Creating main configuration file at /etc/default/jetty ..."
 #su -s /bin/bash - ckan -c ". /usr/lib/ckan/default/bin/activate && paster make-config ckan /etc/ckan/default/development.ini"
 sed -i "s/.*NO_START.*/NO_START=0/g" /etc/default/jetty
 sed -i "s/.*JETTY_HOST.*/JETTY_HOST=127.0.0.1/" /etc/default/jetty
-sed -i "s/.*#JETTY_PORT.*/JETTY_PORT=8983/g" /etc/default/jetty
+sed -i "s/.*JETTY_PORT.*/JETTY_PORT=8983/g" /etc/default/jetty
 #sed -i "s/ckan_default:pass@localhost/ckan_default:$v_password@localhost/g" /etc/ckan/default/development.ini
 #sed -i "s/#solr_url/solr_url/g" /etc/ckan/default/development.ini
 #sed -i "s/127.0.0.1:8983/127.0.0.1:8080/g" /etc/ckan/default/development.ini
@@ -166,10 +166,10 @@ sed -i "s/.*ckan.site_url.*/ckan.site_url = http:\/\/$v_siteurl/g" /etc/ckan/def
 sed -i "s/.*sqlalchemy.url.*/sqlalchemy.url = postgresql://ckan_default:$v_password@localhost/ckan_default/g" /etc/ckan/default/production.ini
 # sed -i "s/ckan_default:pass@localhost/ckan_default:$v_password@localhost/g" /etc/ckan/default/production.ini
 # ckan.datastore.write_url = postgresql://ckan_default:pass@localhost/datastore_default
-sed -i "s/.*#ckan.datastore.write_url.*/sqlalchemy.url = ckan.datastore.write_url = postgresql://ckan_default:$v_password@localhost/datastore_default/g" /etc/ckan/default/production.ini
+sed -i "s/.*ckan.datastore.write_url.*/sqlalchemy.url = ckan.datastore.write_url = postgresql://ckan_default:$v_password@localhost/datastore_default/g" /etc/ckan/default/production.ini
 # ckan.datastore.read_url = postgresql://datastore_default:pass@localhost/datastore_default
-sed -i "s/.*#ckan.datastore.read_url.*/sqlalchemy.url = ckan.datastore.read_url = postgresql://datastore_default:$v_password@localhost/datastore_default/g" /etc/ckan/default/production.ini
-sed -i "s/.*#solr_url.*/solr_url=http://127.0.0.1:8983/solr/g" /etc/ckan/default/production.ini
+sed -i "s/.*ckan.datastore.read_url.*/sqlalchemy.url = ckan.datastore.read_url = postgresql://datastore_default:$v_password@localhost/datastore_default/g" /etc/ckan/default/production.ini
+sed -i "s/.*solr_url.*/solr_url=http://127.0.0.1:8983/solr/g" /etc/ckan/default/production.ini
 su -c "service jetty restart"
 su -c "sleep 1"
 su -c "service nginx restart"
@@ -180,8 +180,10 @@ su -c "sudo ckan db init"
 #chown ckan.33 -R /etc/ckan/default
 
 # Setup a storage path
-#echo    "# 11. Setting a storage path for upload support..."
-#su -c "sleep 2"
+echo    "# ======================================================== #"
+echo    "# 9. Setting a storage path for upload support...			#"
+echo    "# ======================================================== #"
+# su -c "sleep 2"
 sudo mkdir -p /var/lib/ckan/default
 #ckan.storage_path = /var/lib/ckan/default
 #ckan.max_resource_size = 100
