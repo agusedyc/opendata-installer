@@ -169,7 +169,8 @@ sed -i "s/ckan_default:pass@localhost/ckan_default:$v_password@localhost/g" /etc
 # sed -i "s/.*ckan.datastore.write_url.*/sqlalchemy.url = ckan.datastore.write_url = postgresql://ckan_default:$v_password@localhost/datastore_default/g" /etc/ckan/default/production.ini
 # ckan.datastore.read_url = postgresql://datastore_default:pass@localhost/datastore_default
 # sed -i "s/.*ckan.datastore.read_url.*/sqlalchemy.url = ckan.datastore.read_url = postgresql://datastore_default:$v_password@localhost/datastore_default/g" /etc/ckan/default/production.ini
-sed -i "s/.*solr_url.*/solr_url=http://127.0.0.1:8983/solr/g" /etc/ckan/default/production.ini
+# sed -i "s/.*#solr_url.*/solr_url = http://127.0.0.1:8983/solr/g" /etc/ckan/default/production.ini
+sed -i "s/#solr_url/solr_url/g" /etc/ckan/default/production.ini
 su -c "service jetty restart"
 su -c "sleep 1"
 su -c "service nginx restart"
