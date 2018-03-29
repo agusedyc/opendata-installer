@@ -163,12 +163,12 @@ echo    "# 10. Creating main configuration file at /etc/ckan/default/development
 #su -s /bin/bash - ckan -c ". /usr/lib/ckan/default/bin/activate && paster make-config ckan /etc/ckan/default/development.ini"
 sed -i "s/.*ckan.site_url.*/ckan.site_url = http:\/\/$v_siteurl/g" /etc/ckan/default/production.ini
 # Sql
-sed -i "s/.*sqlalchemy.url.*/sqlalchemy.url = postgresql://ckan_default:$v_password@localhost/ckan_default/g" /etc/ckan/default/production.ini
-# sed -i "s/ckan_default:pass@localhost/ckan_default:$v_password@localhost/g" /etc/ckan/default/production.ini
+# sed -i "s/.*sqlalchemy.url.*/sqlalchemy.url = postgresql://ckan_default:$v_password@localhost/ckan_default/g" /etc/ckan/default/production.ini
+sed -i "s/ckan_default:pass@localhost/ckan_default:$v_password@localhost/g" /etc/ckan/default/production.ini
 # ckan.datastore.write_url = postgresql://ckan_default:pass@localhost/datastore_default
-sed -i "s/.*ckan.datastore.write_url.*/sqlalchemy.url = ckan.datastore.write_url = postgresql://ckan_default:$v_password@localhost/datastore_default/g" /etc/ckan/default/production.ini
+# sed -i "s/.*ckan.datastore.write_url.*/sqlalchemy.url = ckan.datastore.write_url = postgresql://ckan_default:$v_password@localhost/datastore_default/g" /etc/ckan/default/production.ini
 # ckan.datastore.read_url = postgresql://datastore_default:pass@localhost/datastore_default
-sed -i "s/.*ckan.datastore.read_url.*/sqlalchemy.url = ckan.datastore.read_url = postgresql://datastore_default:$v_password@localhost/datastore_default/g" /etc/ckan/default/production.ini
+# sed -i "s/.*ckan.datastore.read_url.*/sqlalchemy.url = ckan.datastore.read_url = postgresql://datastore_default:$v_password@localhost/datastore_default/g" /etc/ckan/default/production.ini
 sed -i "s/.*solr_url.*/solr_url=http://127.0.0.1:8983/solr/g" /etc/ckan/default/production.ini
 su -c "service jetty restart"
 su -c "sleep 1"
@@ -220,3 +220,12 @@ echo    "# ======================================================== #"
 echo    "|"
 echo    "# Press [Enter] to continue..."
 read success
+
+# #Konfigurasi Harvest
+# ckan.harvest.mq.type = redis
+# ckan.harvest.mq.hostname = localhost
+# ckan.harvest.mq.port = 6379
+# ckan.harvest.mq.redis_db = 0
+# ckan.harvest.log_scope = 0
+# ckan.harvest.log_timeframe = 10
+# ckan.harvest.log_level = info
