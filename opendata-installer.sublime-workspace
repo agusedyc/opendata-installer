@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"v",
+				"v_password"
+			],
+			[
+				"site",
+				"site_url"
+			],
+			[
 				"str",
 				"strtotime"
 			],
@@ -91,7 +99,16 @@
 			"file": "ckan_ubuntu14.04_installer.sh",
 			"settings":
 			{
-				"buffer_size": 9293,
+				"buffer_size": 10232,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "production.ini",
+			"settings":
+			{
+				"buffer_size": 6286,
 				"line_ending": "Unix"
 			}
 		}
@@ -215,7 +232,7 @@
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -229,6 +246,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"store"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -252,31 +270,63 @@
 				{
 					"buffer": 0,
 					"file": "ckan_ubuntu14.04_installer.sh",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9293,
+						"buffer_size": 10232,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								498,
-								498
+								7816,
+								7816
 							]
 						],
 						"settings":
 						{
+							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2203.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "production.ini",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 6286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1793,
+								1793
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 580.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -345,7 +395,7 @@
 		[
 			[
 				"",
-				"~/Remote/ypia/ypiasmg.sublime-project"
+				"~/Vagrant/ckanMaster/ckanapp/ckanapp.sublime-project"
 			]
 		],
 		"width": 380.0
