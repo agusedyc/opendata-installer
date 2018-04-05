@@ -107,14 +107,14 @@ sed -i "s/datastore_default:pass@localhost/datastore_default:$v_password@localho
 sed -i "s/#ckan.datastore.write_url/ckan.datastore.write_url/g" /etc/ckan/default/production.ini
 sed -i "s/#ckan.datastore.read_url/ckan.datastore.read_url/g" /etc/ckan/default/production.ini
 # ckan.plugins = datastore
-sed -i "s/#ckan.plugins =/ckan.plugins = datastore/g" /etc/ckan/default/production.ini
+sed -i "s/ckan.plugins =/ckan.plugins = datastore/g" /etc/ckan/default/production.ini
 
 # ckan.datastore.write_url = postgresql://ckan_default:pass@localhost/datastore_default
 # sed -i "s/.*ckan.datastore.write_url.*/sqlalchemy.url = ckan.datastore.write_url = postgresql://ckan_default:$v_password@localhost/datastore_default/g" /etc/ckan/default/production.ini
 # ckan.datastore.read_url = postgresql://datastore_default:pass@localhost/datastore_default
 # sed -i "s/.*ckan.datastore.read_url.*/sqlalchemy.url = ckan.datastore.read_url = postgresql://datastore_default:$v_password@localhost/datastore_default/g" /etc/ckan/default/production.ini
 # sed -i "s/.*#solr_url.*/solr_url = http://127.0.0.1:8983/solr/g" /etc/ckan/default/production.ini
-su -c "sudo -u postgres psql && sudo ckan datastore set-permissions | sudo -u postgres psql --set ON_ERROR_STOP=1"
+su -c "sudo -u postgres psql && sudo ckan datastore set-permissions | sudo -u postgres psql --set ON_ERROR_STOP=1 | \q"
 su -c "service apache2 restart"
 #mkdir -p /var/lib/ckan
 #chown -R ckan.33 /var/lib/ckan
