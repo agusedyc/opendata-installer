@@ -105,6 +105,16 @@
 			}
 		},
 		{
+			"file": "ckan_datastore_ubuntu14.04_installer.sh",
+			"settings":
+			{
+				"buffer_size": 6941,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "ckan_datastore_ubuntu14.04_installer.sh"
+			}
+		},
+		{
 			"file": "production.ini",
 			"settings":
 			{
@@ -121,7 +131,7 @@
 	"command_palette":
 	{
 		"height": 392.0,
-		"last_filter": "htm",
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -145,7 +155,7 @@
 				"Install Package Control"
 			]
 		],
-		"width": 587.0
+		"width": 461.0
 	},
 	"console":
 	{
@@ -264,7 +274,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -280,8 +290,8 @@
 						"selection":
 						[
 							[
-								7816,
-								7816
+								0,
+								10232
 							]
 						],
 						"settings":
@@ -289,17 +299,49 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax"
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2203.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "ckan_datastore_ubuntu14.04_installer.sh",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6941,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6941,
+								6941
+							]
+						],
+						"settings":
+						{
+							"auto_name": "ckan_datastore_ubuntu14.04_installer.sh",
+							"incomplete_sync": null,
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1996.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "production.ini",
 					"semi_transient": true,
 					"settings":
@@ -323,10 +365,10 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 580.0,
+						"translation.y": 642.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -417,7 +459,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 269.0,
+	"side_bar_width": 160.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
