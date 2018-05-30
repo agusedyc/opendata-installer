@@ -1,5 +1,5 @@
 #!/bin/bash
-INPUT=usergrob.csv
+INPUT=userkabkota.csv
 #Nama Kab/Kota Cotoh Kota Semarang
 kabkota=""
 #Alamat Situs Opendata 
