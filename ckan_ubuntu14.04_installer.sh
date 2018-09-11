@@ -192,7 +192,7 @@ sudo mkdir -p /var/lib/ckan/default
 sed -i "s/.*ckan.storage_path.*/ckan.storage_path = \/var\/lib\/ckan\/default/g" /etc/ckan/default/production.ini
 sed -i "s/.*ckan.max_resource_size.*/ckan.max_resource_size = 100/g" /etc/ckan/default/production.ini
 sed -i "s/.*ckan.max_image_size.*/ckan.max_image_size = 10/g" /etc/ckan/default/production.ini
-sudo chown www-data /var/lib/ckan/default
+sudo chown www-data:root -R /var/lib/ckan/default
 sudo chmod u+rwx /var/lib/ckan/default
 su -c "sleep 1"
 su -c "service apache2 restart"
